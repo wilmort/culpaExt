@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "CULPA Extendo",
+    "version": "1.0.0",
+    "description": "CULPA reviews in SSOL",
+    "content_scripts": [
+        {
+            "js": [
+                "ssol.js",
+                "coursepage.js",
+                "subject.js"
+            ],
+            "css": [
+                "coursepage.css",
+                "subject.css"
+            ],
+            "json": [
+                "ids.json"
+            ],
+            "matches": [
+                "https://ssol.columbia.edu/cgi-bin/ssol/*"
+            ]
+        }
+    ]
+}
